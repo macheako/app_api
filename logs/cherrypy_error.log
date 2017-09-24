@@ -1,0 +1,150 @@
+[23/Sep/2017:18:30:49] ENGINE Bus STARTING
+[23/Sep/2017:18:30:49] ENGINE Started monitor thread '_TimeoutMonitor'.
+[23/Sep/2017:18:30:49] ENGINE Started monitor thread 'Autoreloader'.
+[23/Sep/2017:18:30:49] ENGINE Error in 'start' listener <bound method PIDFile.start of <cherrypy.process.plugins.PIDFile object at 0x17e3b90>>
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/site-packages/cherrypy/process/wspbus.py", line 215, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/lib64/python2.6/site-packages/cherrypy/process/plugins.py", line 441, in start
+    open(self.pidfile, 'wb').write(ntob('%s\n' % pid, 'utf8'))
+IOError: [Errno 2] No such file or directory: '/var/run/app_api/api.pid'
+
+[23/Sep/2017:18:30:49] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x1737d10>>
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/site-packages/cherrypy/process/wspbus.py", line 215, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/lib64/python2.6/site-packages/cherrypy/_cpserver.py", line 171, in start
+    super(Server, self).start()
+  File "/usr/lib64/python2.6/site-packages/cherrypy/process/servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "/usr/lib/python2.6/site-packages/portend.py", line 110, in free
+    while not timer.expired():
+  File "/usr/lib/python2.6/site-packages/tempora/timing.py", line 123, in expired
+    return self.split().total_seconds() > self.target
+AttributeError: 'datetime.timedelta' object has no attribute 'total_seconds'
+
+[23/Sep/2017:18:30:49] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/site-packages/cherrypy/process/wspbus.py", line 253, in start
+    self.publish('start')
+  File "/usr/lib64/python2.6/site-packages/cherrypy/process/wspbus.py", line 233, in publish
+    raise exc
+ChannelFailures: IOError(2, 'No such file or directory')
+AttributeError("'datetime.timedelta' object has no attribute 'total_seconds'",)
+
+[23/Sep/2017:18:30:49] ENGINE Bus STOPPING
+[23/Sep/2017:18:30:49] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', '80')) already shut down
+[23/Sep/2017:18:30:49] ENGINE Stopped thread '_TimeoutMonitor'.
+[23/Sep/2017:18:30:49] ENGINE Stopped thread 'Autoreloader'.
+[23/Sep/2017:18:30:49] ENGINE Bus STOPPED
+[23/Sep/2017:18:30:49] ENGINE Bus EXITING
+[23/Sep/2017:18:30:49] ENGINE Bus EXITED
+[23/Sep/2017:18:31:23] ENGINE Bus STARTING
+[23/Sep/2017:18:31:23] ENGINE Started monitor thread '_TimeoutMonitor'.
+[23/Sep/2017:18:31:23] ENGINE Started monitor thread 'Autoreloader'.
+[23/Sep/2017:18:31:23] ENGINE Error in 'start' listener <bound method PIDFile.start of <cherrypy.process.plugins.PIDFile object at 0x1ab2b90>>
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/site-packages/cherrypy/process/wspbus.py", line 215, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/lib64/python2.6/site-packages/cherrypy/process/plugins.py", line 441, in start
+    open(self.pidfile, 'wb').write(ntob('%s\n' % pid, 'utf8'))
+IOError: [Errno 2] No such file or directory: '/var/run/app_api/api.pid'
+
+[23/Sep/2017:18:31:23] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x1a06d10>>
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/site-packages/cherrypy/process/wspbus.py", line 215, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/lib64/python2.6/site-packages/cherrypy/_cpserver.py", line 171, in start
+    super(Server, self).start()
+  File "/usr/lib64/python2.6/site-packages/cherrypy/process/servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "/usr/lib/python2.6/site-packages/portend.py", line 110, in free
+    while not timer.expired():
+  File "/usr/lib/python2.6/site-packages/tempora/timing.py", line 123, in expired
+    return self.split().total_seconds() > self.target
+AttributeError: 'datetime.timedelta' object has no attribute 'total_seconds'
+
+[23/Sep/2017:18:31:23] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/site-packages/cherrypy/process/wspbus.py", line 253, in start
+    self.publish('start')
+  File "/usr/lib64/python2.6/site-packages/cherrypy/process/wspbus.py", line 233, in publish
+    raise exc
+ChannelFailures: IOError(2, 'No such file or directory')
+AttributeError("'datetime.timedelta' object has no attribute 'total_seconds'",)
+
+[23/Sep/2017:18:31:23] ENGINE Bus STOPPING
+[23/Sep/2017:18:31:23] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', '80')) already shut down
+[23/Sep/2017:18:31:23] ENGINE Stopped thread '_TimeoutMonitor'.
+[23/Sep/2017:18:31:23] ENGINE Stopped thread 'Autoreloader'.
+[23/Sep/2017:18:31:23] ENGINE Bus STOPPED
+[23/Sep/2017:18:31:23] ENGINE Bus EXITING
+[23/Sep/2017:18:31:23] ENGINE Bus EXITED
+[23/Sep/2017:18:32:08] ENGINE Bus STARTING
+[23/Sep/2017:18:32:08] ENGINE Started monitor thread '_TimeoutMonitor'.
+[23/Sep/2017:18:32:08] ENGINE Started monitor thread 'Autoreloader'.
+[23/Sep/2017:18:32:08] ENGINE PID 18861 written to '/var/run/app_api/api.pid'.
+[23/Sep/2017:18:32:08] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x1787d10>>
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/site-packages/cherrypy/process/wspbus.py", line 215, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/lib64/python2.6/site-packages/cherrypy/_cpserver.py", line 171, in start
+    super(Server, self).start()
+  File "/usr/lib64/python2.6/site-packages/cherrypy/process/servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "/usr/lib/python2.6/site-packages/portend.py", line 110, in free
+    while not timer.expired():
+  File "/usr/lib/python2.6/site-packages/tempora/timing.py", line 123, in expired
+    return self.split().total_seconds() > self.target
+AttributeError: 'datetime.timedelta' object has no attribute 'total_seconds'
+
+[23/Sep/2017:18:32:08] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/site-packages/cherrypy/process/wspbus.py", line 253, in start
+    self.publish('start')
+  File "/usr/lib64/python2.6/site-packages/cherrypy/process/wspbus.py", line 233, in publish
+    raise exc
+ChannelFailures: AttributeError("'datetime.timedelta' object has no attribute 'total_seconds'",)
+
+[23/Sep/2017:18:32:08] ENGINE Bus STOPPING
+[23/Sep/2017:18:32:08] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', '80')) already shut down
+[23/Sep/2017:18:32:08] ENGINE Stopped thread '_TimeoutMonitor'.
+[23/Sep/2017:18:32:08] ENGINE Stopped thread 'Autoreloader'.
+[23/Sep/2017:18:32:08] ENGINE Bus STOPPED
+[23/Sep/2017:18:32:08] ENGINE Bus EXITING
+[23/Sep/2017:18:32:08] ENGINE PID file removed: '/var/run/app_api/api.pid'.
+[23/Sep/2017:18:32:08] ENGINE Bus EXITED
+[23/Sep/2017:18:36:11] ENGINE Bus STARTING
+[23/Sep/2017:18:36:11] ENGINE Started monitor thread '_TimeoutMonitor'.
+[23/Sep/2017:18:36:11] ENGINE Started monitor thread 'Autoreloader'.
+[23/Sep/2017:18:36:11] ENGINE PID 18904 written to '/var/run/app_api/api.pid'.
+[23/Sep/2017:18:36:11] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x2716d10>>
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/site-packages/cherrypy/process/wspbus.py", line 215, in publish
+    output.append(listener(*args, **kwargs))
+  File "/usr/lib64/python2.6/site-packages/cherrypy/_cpserver.py", line 171, in start
+    super(Server, self).start()
+  File "/usr/lib64/python2.6/site-packages/cherrypy/process/servers.py", line 177, in start
+    portend.free(*self.bind_addr, timeout=Timeouts.free)
+  File "/usr/lib/python2.6/site-packages/portend.py", line 110, in free
+    while not timer.expired():
+  File "/usr/lib/python2.6/site-packages/tempora/timing.py", line 123, in expired
+    return self.split().total_seconds() > self.target
+AttributeError: 'datetime.timedelta' object has no attribute 'total_seconds'
+
+[23/Sep/2017:18:36:11] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/site-packages/cherrypy/process/wspbus.py", line 253, in start
+    self.publish('start')
+  File "/usr/lib64/python2.6/site-packages/cherrypy/process/wspbus.py", line 233, in publish
+    raise exc
+ChannelFailures: AttributeError("'datetime.timedelta' object has no attribute 'total_seconds'",)
+
+[23/Sep/2017:18:36:11] ENGINE Bus STOPPING
+[23/Sep/2017:18:36:11] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) already shut down
+[23/Sep/2017:18:36:11] ENGINE Stopped thread '_TimeoutMonitor'.
+[23/Sep/2017:18:36:11] ENGINE Stopped thread 'Autoreloader'.
+[23/Sep/2017:18:36:11] ENGINE Bus STOPPED
+[23/Sep/2017:18:36:11] ENGINE Bus EXITING
+[23/Sep/2017:18:36:11] ENGINE PID file removed: '/var/run/app_api/api.pid'.
+[23/Sep/2017:18:36:11] ENGINE Bus EXITED
